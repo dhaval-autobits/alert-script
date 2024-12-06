@@ -291,7 +291,7 @@ def detect_voltage_spike(alert_id, tag_id, current_value, window_size):
     return False
 
 
-def calculate_voltage_imbalance(r,y,b):
+def calculate_voltage_imbalance(b,y,r):
     """
     Calculate the voltage imbalance percentage.
     

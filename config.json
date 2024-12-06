@@ -1,13 +1,13 @@
 [
     {
-        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a011",
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a001",
         "status": true,
         "machine_id": "66e03c39431bd909598197d54",
         "alert_name": "Voltage imbalance",
         "alert_type": 1,
         "spike_check":true,
         "flag": "red",
-        "alert_msg": "Current imbalance",
+        "alert_msg": "Voltage imbalance",
         "alert_time": 1,
         "periodic": false,
         "alert_frequency": 0.333333,
@@ -152,7 +152,7 @@
         
     },
     {
-        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a003",
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a004",
         "status": true,
         "machine_id": "66e03c39431bd909598197d54",
         "alert_name": "Detect spike in voltage",
@@ -191,52 +191,10 @@
         
     },
     {
-        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a004",
-        "status": true,
-        "machine_id": "66e03c39431bd909598197d54",
-        "alert_name": "Voltage is unstable",
-        "alert_type": 1,
-        "spike_check":true,
-        "flag": "red",
-        "alert_msg": "Voltage is unstable",
-        "alert_time": 1,
-        "periodic": false,
-        "alert_frequency": 0.333333,
-        "logic_language": "python",
-        "library_required": "",
-        "Git_link": "",
-        "Git_pull_date": "",
-        "rule": "is_voltage_unstable(LN_phase,BR_phase,YB_phase,RY_phase,3)",
-        "device_id": "8832b32878832b3287b328y8234",
-        "permissions": "",
-        "whatsapp_numbers": [
-            "1002389770230"
-        ],
-        "telegram_channels": [
-            "7990074653"
-        ],
-        "sms": [
-            "1234567890",
-            "9876543210",
-            "5555555555"
-        ],
-        "api_list": [],
-        "tag_name": [],
-        "tag_id": {
-            "LN_phase":"1022CyV",
-            "BR_phase":"1022CU9",
-            "YB_phase":"1022CE2",
-            "RY_phase":"1022Cpb"
-        },
-        "createdAt": "2024-11-16T06:26:22.187Z",
-        "updatedAt": "2024-11-16T06:26:22.187Z"
-       
-    },
-    {
         "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a005",
         "status": true,
         "machine_id": "66e03c39431bd909598197d54",
-        "alert_name": "Increase Cunsumption at night",
+        "alert_name": "Voltage is unstable",
         "alert_type": 1,
         "spike_check":true,
         "flag": "red",
@@ -282,6 +240,48 @@
         "alert_type": 1,
         "spike_check":true,
         "flag": "red",
+        "alert_msg": "Voltage is unstable",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "is_voltage_unstable(LN_phase,BR_phase,YB_phase,RY_phase,3)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "LN_phase":"1022CyV",
+            "BR_phase":"1022CU9",
+            "YB_phase":"1022CE2",
+            "RY_phase":"1022Cpb"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+       
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a007",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Increase Cunsumption at night",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
         "alert_msg": "Increase cunsumption at night",
         "alert_time": 1,
         "periodic": false,
@@ -313,5 +313,4 @@
         "updatedAt": "2024-11-16T06:26:22.187Z"
        
     }
-    
 ]
