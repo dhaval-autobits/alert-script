@@ -1,0 +1,317 @@
+[
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a011",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Voltage imbalance",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
+        "alert_msg": "Current imbalance",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "value1":"",
+        "rule": "calculate_voltage_imbalance(B,Y,R)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "B":"1022CU9",
+            "Y":"1022CE2",
+            "R":"1022Cpb"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a001",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Current imbalance",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
+        "alert_msg": "Current imbalance",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "value1":"",
+        "rule": "calculate_current_imbalance(B,Y,R)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "B":"1022Cia",
+            "Y":"1022Ct8",
+            "R":"1022Czr"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a002",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "High voltage",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
+        "alert_msg": "Voltage",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "value1":"",
+        "rule": "if 425 <= voltage <= 444:\n     result = True",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "voltage":"1022CjK"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a003",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Detect spike in current",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "yellow",
+        "alert_msg": "Detect spike in current",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "detect_spike(alert_id,'1022C2R',current,14)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "current":"1022C2R"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+        
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a003",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Detect spike in voltage",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "yellow",
+        "alert_msg": "Detect spike in voltage",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "detect_voltage_spike(alert_id,'1022CjK',current,14)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "current":"1022CjK"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+        
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a004",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Voltage is unstable",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
+        "alert_msg": "Voltage is unstable",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "is_voltage_unstable(LN_phase,BR_phase,YB_phase,RY_phase,3)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "LN_phase":"1022CyV",
+            "BR_phase":"1022CU9",
+            "YB_phase":"1022CE2",
+            "RY_phase":"1022Cpb"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+       
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a005",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Increase Cunsumption at night",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
+        "alert_msg": "Voltage is unstable",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "is_voltage_unstable(LN_phase,BR_phase,YB_phase,RY_phase,3)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "LN_phase":"1022CyV",
+            "BR_phase":"1022CU9",
+            "YB_phase":"1022CE2",
+            "RY_phase":"1022Cpb"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+       
+    },
+    {
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a006",
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Increase Cunsumption at night",
+        "alert_type": 1,
+        "spike_check":true,
+        "flag": "red",
+        "alert_msg": "Increase cunsumption at night",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "if (7 <= datetime.now().hour or datetime.now().hour < 22) and  5 <= current:\n     result = True",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "current":"1022C2R"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z"
+       
+    }
+    
+]

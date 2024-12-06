@@ -1,0 +1,123 @@
+[
+
+    {
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Current imbalance ",
+        "alert_type": 4,
+        "spike_check":true,
+        "flag": "yellow",
+        "alert_msg": "Machine is turned ON",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "value1":"",
+        "rule": "phase_currents = {\"R\": R, \"Y\": Y, \"B\": B}\nprint(\"Phase current data:\", phase_currents)\n\n# Extract phase current values\ncurrents = list(phase_currents.values())\n\n# Ensure there are at least two current values to compare\nif len(currents) < 2:\n    print(\"Error: Insufficient data for current imbalance calculation.\")\n    result = False\nelse:\n    # Find the maximum and minimum current values\n    max_current = max(currents)\n    min_current = min(currents)\n\n    # Calculate the percentage imbalance\n    imbalance_percentage = ((max_current - min_current) / min_current)\n    print(\"Imbalance Percentage:\", imbalance_percentage)\n\n    # Set the imbalance threshold\n    threshold = 5\n    if imbalance_percentage > threshold:\n        print(f\"Current imbalance detected: {imbalance_percentage:.2f}% (Threshold: {threshold})\")\n        result = True\n    else:\n        result = False",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "B":"1022Cia",
+            "Y":"1022Ct8",
+            "R":"1022Czr"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z",
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a007"
+    },
+    {
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Healthy current",
+        "alert_type": 4,
+        "spike_check":true,
+        "flag": "yellow",
+        "alert_msg": "Machine is turned ON",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "detect_spike(alert_id,'1022C2R',current,14)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "current":"1022C2R"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z",
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a009"
+    },
+    {
+        "status": true,
+        "machine_id": "66e03c39431bd909598197d54",
+        "alert_name": "Healthy current",
+        "alert_type": 4,
+        "spike_check":true,
+        "flag": "yellow",
+        "alert_msg": "Machine is turned ON",
+        "alert_time": 1,
+        "periodic": false,
+        "alert_frequency": 0.333333,
+        "logic_language": "python",
+        "library_required": "",
+        "Git_link": "",
+        "Git_pull_date": "",
+        "rule": "is_voltage_unstable(LN_phase,BR_phase,YB_phase,RY_phase,3)",
+        "device_id": "8832b32878832b3287b328y8234",
+        "permissions": "",
+        "whatsapp_numbers": [
+            "1002389770230"
+        ],
+        "telegram_channels": [
+            "7990074653"
+        ],
+        "sms": [
+            "1234567890",
+            "9876543210",
+            "5555555555"
+        ],
+        "api_list": [],
+        "tag_name": [],
+        "tag_id": {
+            "LN_phase":"1022CyV",
+            "BR_phase":"1022CU9",
+            "YB_phase":"1022CE2",
+            "RY_phase":"1022Cpb"
+        },
+        "createdAt": "2024-11-16T06:26:22.187Z",
+        "updatedAt": "2024-11-16T06:26:22.187Z",
+        "_id": "b8eb872a-38d0-4ff2-98bf-2b957e61a010"
+    }
+]
